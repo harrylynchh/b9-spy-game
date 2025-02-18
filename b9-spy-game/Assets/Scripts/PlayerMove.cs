@@ -8,7 +8,7 @@ public class PlayerMove : MonoBehaviour
     //public Animator animator;
     public Rigidbody2D rb2D;
     private bool FaceRight = true; // determine which way player is facing.
-    public static float runSpeed = 10f;
+    public float playerRunSpeed = 10f;
     public float startSpeed = 10f;
     public bool isAlive = true;
     //public AudioSource WalkSFX;
@@ -26,7 +26,7 @@ public class PlayerMove : MonoBehaviour
         hMove = new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0.0f);
         if (isAlive == true)
         {
-            transform.position = transform.position + hMove * runSpeed * Time.deltaTime;
+            transform.position = transform.position + hMove * playerRunSpeed * Time.deltaTime;
 
             if (Input.GetAxis("Horizontal") != 0)
             {

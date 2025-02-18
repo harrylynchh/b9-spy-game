@@ -9,8 +9,6 @@ public class PlayerJump : MonoBehaviour
     public Rigidbody2D rb;
     public float jumpForce = 20f;
     public Transform feet;
-    public LayerMask groundLayer;
-    public LayerMask enemyLayer;
     public bool canJump = false;
     public int jumpTimes = 0;
     public bool isAlive = true;
@@ -24,17 +22,6 @@ public class PlayerJump : MonoBehaviour
 
     void Update()
     {
-        if ((IsGrounded()) || (jumpTimes <= 1))
-        {
-            // if ((IsGrounded()) && (jumpTimes <= 1)){ // for single jump only
-            canJump = true;
-        }
-        else if (jumpTimes > 1)
-        {
-            // else { // for single jump only
-            canJump = false;
-        }
-
         if ((Input.GetButtonDown("Jump")) && (canJump) && (isAlive == true))
         {
             Jump();
@@ -43,25 +30,27 @@ public class PlayerJump : MonoBehaviour
 
     public void Jump()
     {
-        jumpTimes += 1;
-        rb.velocity = Vector2.up * jumpForce;
+        if (jumpTimes < 2)
+        {
+            jumpTimes += 1;
+            rb.velocity = Vector2.up * jumpForce;
+        }
+        else
+        {
+            canJump = false;
+        }
         // anim.SetTrigger("Jump");
         // JumpSFX.Play();
 
         //Vector2 movement = new Vector2(rb.velocity.x, jumpForce);
         //rb.velocity = movement;
     }
-
-    public bool IsGrounded()
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        Collider2D groundCheck = Physics2D.OverlapCircle(feet.position, 2f, groundLayer);
-        Collider2D enemyCheck = Physics2D.OverlapCircle(feet.position, 2f, enemyLayer);
-        if ((groundCheck != null) || (enemyCheck != null))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
-            //Debug.Log("I am trouching ground!");
             jumpTimes = 0;
-            return true;
+            canJump = true;
         }
-        return false;
     }
 }
