@@ -84,7 +84,9 @@ public class GameHandler : MonoBehaviour {
       }
 
       public void StartGame() {
+            Debug.Log("StartGame clicked");
             SceneManager.LoadScene("Level1");
+            // SceneManager.LoadScene("Tutorial");
       }
 
       // Return to MainMenu
@@ -114,6 +116,7 @@ public class GameHandler : MonoBehaviour {
       }
 
       public void Credits() {
+            Debug.Log("Credits clicked");
             SceneManager.LoadScene("Credits");
       }
 }
