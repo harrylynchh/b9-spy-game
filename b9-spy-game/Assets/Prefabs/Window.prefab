@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9161933864403311678}
+  - component: {fileID: 1618700552985019175}
   m_Layer: 0
   m_Name: Window
   m_TagString: Untagged
@@ -24,15 +25,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459282606416822901}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.44, y: 1.8, z: -1.155}
-  m_LocalScale: {x: 6.856, y: 6.856, z: 6.856}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 8, y: 8, z: 8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8481972921134233524}
   - {fileID: 2171086719644763828}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1618700552985019175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459282606416822901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c34edde960e5c0d45bf9dc42c0cd0bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLit: 1
 --- !u!1 &3503276974274239145
 GameObject:
   m_ObjectHideFlags: 0
@@ -57,8 +71,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3503276974274239145}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.455, y: -0.2583328, z: 0.40437832}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -128,7 +142,7 @@ GameObject:
   - component: {fileID: 2171086719644763828}
   - component: {fileID: 7752003199481546691}
   m_Layer: 0
-  m_Name: Light 2D
+  m_Name: windowLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,7 +156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6672262787591242812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4626, y: -0.2534, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -213,85 +227,85 @@ MonoBehaviour:
   - position: {x: -0.060625616, y: 0.05819392, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0, y: 0}
-  - position: {x: -0.2569, y: -0.0817, z: 0}
+  - position: {x: -0.2637, y: -0.0479, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.242, y: -0.1417, z: 0}
+  - position: {x: -0.2611, y: -0.1096, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.2094, y: -0.1942, z: 0}
+  - position: {x: -0.2398, y: -0.1676, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1624, y: -0.2343, z: 0}
+  - position: {x: -0.2019, y: -0.2163, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1054, y: -0.2581, z: 0}
+  - position: {x: -0.1508, y: -0.2511, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.0564, y: -0.2639, z: 0}
+  - position: {x: -0.0788, y: -0.27, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.0503, y: -0.2632, z: 0}
+  - position: {x: 0.038, y: -0.2781, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1113, y: -0.2533, z: 0}
+  - position: {x: 0.0995, y: -0.2728, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1663, y: -0.2252, z: 0}
+  - position: {x: 0.1565, y: -0.249, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.2102, y: -0.1816, z: 0}
+  - position: {x: 0.2035, y: -0.2089, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.2386, y: -0.1268, z: 0}
+  - position: {x: 0.2361, y: -0.1564, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.2477, y: -0.0404, z: 0}
+  - position: {x: 0.2518, y: -0.0815, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.2437, y: -0.0056, z: 0}
+  - position: {x: 0.2528, y: -0.0089, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.2474, y: 0.0534, z: 0}
+  - position: {x: 0.2561, y: 0.0483, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.2417, y: 0.1149, z: 0}
+  - position: {x: 0.25, y: 0.1098, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.2175, y: 0.1718, z: 0}
+  - position: {x: 0.2255, y: 0.1665, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1771, y: 0.2185, z: 0}
+  - position: {x: 0.1848, y: 0.213, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.1243, y: 0.2507, z: 0}
+  - position: {x: 0.1319, y: 0.2449, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: 0.0401, y: 0.2658, z: 0}
+  - position: {x: 0.0718, y: 0.2591, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.0766, y: 0.2613, z: 0}
+  - position: {x: 0.0366, y: 0.2587, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1372, y: 0.2494, z: 0}
+  - position: {x: -0.0712, y: 0.248, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.1913, y: 0.2195, z: 0}
+  - position: {x: -0.131, y: 0.2325, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.2338, y: 0.1746, z: 0}
+  - position: {x: -0.1832, y: 0.1995, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.2605, y: 0.1189, z: 0}
+  - position: {x: -0.2228, y: 0.1521, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  - position: {x: -0.2681, y: 0.0436, z: 0}
+  - position: {x: -0.2501, y: 0.0716, z: 0}
     color: {r: 0, g: 0, b: 0, a: 0}
     uv: {x: 0, y: 0}
-  m_Triangles: 00000200010000000400020002000400030005000a000a0005000a000b0005000b000c0005000c000d0005000d000e0005000e000f0005000600100005000f001000060010001100060011001200060012001300060013001400060014001500060007001600060015001600070008001700070016001700080017001800080018001900080019001a0008001a001b0008001b001c00080009001d0008001c001d0009001d001e0009001e001f0009001f0020000900200021000900210022000a00050009000a0022000900
+  m_Triangles: 00000200010000000400020002000400030005000a000a0005000a000b0005000b000c0005000c000d0005000d000e0005000e000f0005000600100005000f001000060010001100060011001200060012001300060013001400060014001500060007001600060015001600070008001700070016001700080017001800080018001900080019001a0008001a001b0008001b001c0008001c001d00080009001e0008001d001e0009001e001f0009001f0020000900200021000900210022000a00050009000a0022000900
   m_LocalBounds:
-    m_Center: {x: -0.010199994, y: 0.00094999373, z: 0}
-    m_Extent: {x: 0.2579, y: 0.26485002, z: 0}
+    m_Center: {x: -0.0038000047, y: -0.009500012, z: 0}
+    m_Extent: {x: 0.2599, y: 0.2686, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
