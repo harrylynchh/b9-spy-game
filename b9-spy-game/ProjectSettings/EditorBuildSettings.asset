@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/Oko Work/EndLose.unity
     guid: 64bb8065e42024a39b50aa14bac2bd40
   - enabled: 1
     path: Assets/Scenes/Level1.unity

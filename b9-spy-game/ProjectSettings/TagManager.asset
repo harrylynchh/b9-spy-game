@@ -7,6 +7,8 @@ TagManager:
   - GameHandler
   - PauseMenuSlider
   - MonologueManager
+  - New tag
+  - Players2
   layers:
   - Default
   - TransparentFX
