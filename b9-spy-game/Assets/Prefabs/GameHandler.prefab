@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5321850746239768381}
   - component: {fileID: 9031880214282260012}
+  - component: {fileID: 3389706947716662022}
   m_Layer: 0
   m_Name: GameHandler
   m_TagString: GameHandler
@@ -30,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9031880214282260012
 MonoBehaviour:
@@ -44,3 +45,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e611843f98645a088f8f7489905f29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLightLevel: 1
+  isDefending: 0
+  isInLight: 0
+--- !u!114 &3389706947716662022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176442924591902590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85cfa2b4542d4ce296c71f6e4f7d556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 0}
+  mixer: {fileID: 0}

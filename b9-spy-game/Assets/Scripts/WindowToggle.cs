@@ -5,17 +5,11 @@ using UnityEngine;
 public class WindowToggle : MonoBehaviour
 {
     // Start is called before the first frame update
-    public bool isLit = true;
+    public bool isLightOn = true;
     private Transform windowLight;
     void Start()
     {
         windowLight = transform.Find("windowLight");
-        windowLight.gameObject.SetActive(isLit);
+        windowLight.gameObject.SetActive(isLightOn);
     }
-
-    // Update is called once per frame
-    // void Update()
-    // {
-    //     windowLight.gameObject.SetActive(isLit);
-    // }
 }
