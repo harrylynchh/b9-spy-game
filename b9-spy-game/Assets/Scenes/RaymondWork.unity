@@ -470,6 +470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameHandler
       objectReference: {fileID: 0}
+    - target: {fileID: 3389706947716662022, guid: bfbfcde7701d14ec7843ceac25308e54, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5321850746239768381, guid: bfbfcde7701d14ec7843ceac25308e54, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -6616,46 +6620,46 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_Vertices:
-  - position: {x: 0.65625, y: 2.15625, z: 0}
+  - position: {x: 0.1640625, y: 0.5390625, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0.7058824, y: 0.9859155}
-  - position: {x: 1.03125, y: -2.21875, z: 0}
+  - position: {x: 0.2578125, y: -0.5546875, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0.8235294, y: 0}
-  - position: {x: 1.03125, y: 0.96875, z: 0}
+  - position: {x: 0.2578125, y: 0.2421875, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0.8235294, y: 0.7183099}
-  - position: {x: -0.53125, y: 2.15625, z: 0}
+  - position: {x: -0.1328125, y: 0.5390625, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0.33333334, y: 0.9859155}
-  - position: {x: -0.96875, y: 1.96875, z: 0}
+  - position: {x: -0.2421875, y: 0.4921875, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0.19607843, y: 0.943662}
-  - position: {x: -0.96875, y: 0.90625, z: 0}
+  - position: {x: -0.2421875, y: 0.2265625, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0.19607843, y: 0.70422536}
-  - position: {x: -1.09375, y: -2.09375, z: 0}
+  - position: {x: -0.2734375, y: -0.5234375, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0.15686275, y: 0.028169014}
-  - position: {x: -1.09375, y: -2.21875, z: 0}
+  - position: {x: -0.2734375, y: -0.5546875, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0.15686275, y: 0}
-  - position: {x: 1.40625, y: 0.15625, z: 0}
+  - position: {x: 0.3515625, y: 0.0390625, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0.9411765, y: 0.53521127}
-  - position: {x: 1.34375, y: -0.15625, z: 0}
+  - position: {x: 0.3359375, y: -0.0390625, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0.92156863, y: 0.46478873}
-  - position: {x: 1.46875, y: -0.03125, z: 0}
+  - position: {x: 0.3671875, y: -0.0078125, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0.9607843, y: 0.49295774}
-  - position: {x: 1.21875, y: 0.15625, z: 0}
+  - position: {x: 0.3046875, y: 0.0390625, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0.88235295, y: 0.53521127}
-  - position: {x: 1.15625, y: -0.15625, z: 0}
+  - position: {x: 0.2890625, y: -0.0390625, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0.8627451, y: 0.46478873}
-  - position: {x: 1.09375, y: 0.03125, z: 0}
+  - position: {x: 0.2734375, y: 0.0078125, z: 0}
     color: {r: 0, g: 0, b: 0, a: 1}
     uv: {x: 0.84313726, y: 0.5070422}
   - position: {x: 0, y: 0, z: 0}
@@ -6708,8 +6712,8 @@ MonoBehaviour:
     uv: {x: 0, y: 0}
   m_Triangles: 0d000b000c0009000c000b00080009000b000a0009000800070006000100050001000600040001000500030001000400000001000300020001000000
   m_LocalBounds:
-    m_Center: {x: 0.1875, y: -0.03125, z: 0}
-    m_Extent: {x: 1.28125, y: 2.1875, z: 0}
+    m_Center: {x: 0.046875, y: -0.0078125, z: 0}
+    m_Extent: {x: 0.3203125, y: 0.546875, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

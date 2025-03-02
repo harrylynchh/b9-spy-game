@@ -8,68 +8,154 @@ public class Player_GetHurt : MonoBehaviour
     public GameObject humanForm;
     public GameObject alienForm;
 
+    private float timeChange;
 
     // Start is called before the first frame update
     void Start()
     {
         alienForm.SetActive(true);
         humanForm.SetActive(false);
-        StartCoroutine(TurnHuman(1f));
+        StartCoroutine(TurnHuman());
     }
 
     // Update is called once per frame
-    public void GetHurtStart(float timeChange)
+    public void GetHurtStart()
     {
-       StartCoroutine(TurnBug(timeChange)); 
+        Debug.Log("> START COROUTINE");
+    //    StartCoroutine(TurnBug(timeChange)); 
+       StartCoroutine(TurnBug()); 
     }
 
    public void GetHurtStop()
     {
-        StopCoroutine(TurnBug(0.01f));
-        StartCoroutine(TurnHuman(0.3f));
+        Debug.Log("> STOP COROUTINE");
+        StopCoroutine(TurnBug());
+        StartCoroutine(TurnHuman());
     }
 
-    IEnumerator TurnHuman(float timeChange){
+    IEnumerator TurnHuman(){
+        timeChange = 1f;
         yield return new WaitForSeconds(timeChange);
         alienForm.SetActive(false);
         humanForm.SetActive(true); 
     }
 
-    IEnumerator TurnBug(float timeChange){
-        yield return new WaitForSeconds(timeChange/4);
+    // This is ugly as hell, but it allows the Coroutine to be stopped.
+    IEnumerator TurnBug(){
+        timeChange = 1f;
+        yield return new WaitForSeconds(timeChange/ 4 );
         alienForm.SetActive(true);
         humanForm.SetActive(false); 
         yield return new WaitForSeconds(0.1f);
         alienForm.SetActive(false);
         humanForm.SetActive(true); 
 
-        yield return new WaitForSeconds(timeChange/5);
-        alienForm.SetActive(true);
-        humanForm.SetActive(false); 
-        yield return new WaitForSeconds(0.1f);
-        alienForm.SetActive(false);
-        humanForm.SetActive(true);
-
-        yield return new WaitForSeconds(timeChange/6);
-        alienForm.SetActive(true);
-        humanForm.SetActive(false); 
-        yield return new WaitForSeconds(0.1f);
-        alienForm.SetActive(false);
-        humanForm.SetActive(true);  
-
-        yield return new WaitForSeconds(timeChange/7);
+        yield return new WaitForSeconds(timeChange/ 5 );
         alienForm.SetActive(true);
         humanForm.SetActive(false); 
         yield return new WaitForSeconds(0.1f);
         alienForm.SetActive(false);
         humanForm.SetActive(true); 
 
-        yield return new WaitForSeconds(timeChange/8);
+        yield return new WaitForSeconds(timeChange/ 6 );
         alienForm.SetActive(true);
         humanForm.SetActive(false); 
         yield return new WaitForSeconds(0.1f);
         alienForm.SetActive(false);
         humanForm.SetActive(true); 
+
+        yield return new WaitForSeconds(timeChange/ 7 );
+        alienForm.SetActive(true);
+        humanForm.SetActive(false); 
+        yield return new WaitForSeconds(0.1f);
+        alienForm.SetActive(false);
+        humanForm.SetActive(true); 
+
+        yield return new WaitForSeconds(timeChange/ 8 );
+        alienForm.SetActive(true);
+        humanForm.SetActive(false); 
+        yield return new WaitForSeconds(0.1f);
+        alienForm.SetActive(false);
+        humanForm.SetActive(true); 
+
+        yield return new WaitForSeconds(timeChange/ 9 );
+        alienForm.SetActive(true);
+        humanForm.SetActive(false); 
+        yield return new WaitForSeconds(0.1f);
+        alienForm.SetActive(false);
+        humanForm.SetActive(true); 
+
+        yield return new WaitForSeconds(timeChange/ 10 );
+        alienForm.SetActive(true);
+        humanForm.SetActive(false); 
+        yield return new WaitForSeconds(0.1f);
+        alienForm.SetActive(false);
+        humanForm.SetActive(true); 
+
+        yield return new WaitForSeconds(timeChange/ 11 );
+        alienForm.SetActive(true);
+        humanForm.SetActive(false); 
+        yield return new WaitForSeconds(0.1f);
+        alienForm.SetActive(false);
+        humanForm.SetActive(true); 
+
+        yield return new WaitForSeconds(timeChange/ 12 );
+        alienForm.SetActive(true);
+        humanForm.SetActive(false); 
+        yield return new WaitForSeconds(0.1f);
+        alienForm.SetActive(false);
+        humanForm.SetActive(true); 
+
+        yield return new WaitForSeconds(timeChange/ 13 );
+        alienForm.SetActive(true);
+        humanForm.SetActive(false); 
+        yield return new WaitForSeconds(0.1f);
+        alienForm.SetActive(false);
+        humanForm.SetActive(true); 
+
+        yield return new WaitForSeconds(timeChange/ 14 );
+        alienForm.SetActive(true);
+        humanForm.SetActive(false); 
+        yield return new WaitForSeconds(0.1f);
+        alienForm.SetActive(false);
+        humanForm.SetActive(true); 
+
+        yield return new WaitForSeconds(timeChange/ 15 );
+        alienForm.SetActive(true);
+        humanForm.SetActive(false); 
+        yield return new WaitForSeconds(0.1f);
+        alienForm.SetActive(false);
+        humanForm.SetActive(true); 
+
+        humanForm.SetActive(false); 
+        alienForm.SetActive(true);
+        // yield return new WaitForSeconds(timeChange/5);
+        // alienForm.SetActive(true);
+        // humanForm.SetActive(false); 
+        // yield return new WaitForSeconds(0.1f);
+        // alienForm.SetActive(false);
+        // humanForm.SetActive(true);
+
+        // yield return new WaitForSeconds(timeChange/6);
+        // alienForm.SetActive(true);
+        // humanForm.SetActive(false); 
+        // yield return new WaitForSeconds(0.1f);
+        // alienForm.SetActive(false);
+        // humanForm.SetActive(true);  
+
+        // yield return new WaitForSeconds(timeChange/7);
+        // alienForm.SetActive(true);
+        // humanForm.SetActive(false); 
+        // yield return new WaitForSeconds(0.1f);
+        // alienForm.SetActive(false);
+        // humanForm.SetActive(true); 
+
+        // yield return new WaitForSeconds(timeChange/8);
+        // alienForm.SetActive(true);
+        // humanForm.SetActive(false); 
+        // yield return new WaitForSeconds(0.1f);
+        // alienForm.SetActive(false);
+        // humanForm.SetActive(true); 
 
     }
 
