@@ -9,6 +9,7 @@ public class PlayerGoal : MonoBehaviour
     {
         if (other.CompareTag("Finish"))
         {
+            Debug.Log("Yes this the PlayerGoal.cs script");
             SceneManager.LoadScene("EndWin");
         }
     }
