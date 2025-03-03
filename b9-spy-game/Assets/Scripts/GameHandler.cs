@@ -82,6 +82,13 @@ public class GameHandler : MonoBehaviour
             // Reset all static variables here, for new games:
       }
 
+      // Return to MainMenu
+      public void BackToMainMenu()
+      {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene("MainMenu");
+      }
+
       // Replay the Level where you died
       public void ReplayLastLevel()
       {
