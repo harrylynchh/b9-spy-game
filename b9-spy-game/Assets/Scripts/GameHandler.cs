@@ -19,6 +19,7 @@ public class GameHandler : MonoBehaviour
       private string sceneName;
       public static string lastLevelDied;  //allows replaying the Level where you died
       public bool isInLight = false;
+      public int inventoryCt = 0;
       void Start()
       {
             player = GameObject.FindWithTag("Player");
@@ -29,6 +30,11 @@ public class GameHandler : MonoBehaviour
       }
       void FixedUpdate()
       {
+            if (inventoryCt == 5)
+            {
+                  SceneManager.LoadScene("EndWin");
+
+            }
             if (isInLight)
             {
                   Debug.Log("DECREMENTING");
@@ -48,7 +54,8 @@ public class GameHandler : MonoBehaviour
       public void playerDies()
       {
             // player.GetComponent<PlayerHurt>().playerDead();       //play Death animation
-            lastLevelDied = sceneName;       //allows replaying the Level where you died
+            lastLevelDied = sceneName;
+            inventoryCt = 0;       //allows replaying the Level where you died
             StartCoroutine(DeathPause());
       }
 
@@ -69,6 +76,7 @@ public class GameHandler : MonoBehaviour
       public void StartGame()
       {
             Debug.Log("StartGame clicked");
+            inventoryCt = 0;
             SceneManager.LoadScene("Level1");
             // SceneManager.LoadScene("Tutorial");
       }
@@ -77,6 +85,7 @@ public class GameHandler : MonoBehaviour
       public void RestartGame()
       {
             Time.timeScale = 1f;
+            inventoryCt = 0;
             GameHandler_PauseMenu.GameisPaused = false;
             SceneManager.LoadScene("MainMenu");
             // Reset all static variables here, for new games:
@@ -85,6 +94,7 @@ public class GameHandler : MonoBehaviour
       // Return to MainMenu
       public void BackToMainMenu()
       {
+            inventoryCt = 0;
             Time.timeScale = 1f;
             SceneManager.LoadScene("MainMenu");
       }
@@ -93,6 +103,7 @@ public class GameHandler : MonoBehaviour
       public void ReplayLastLevel()
       {
             Time.timeScale = 1f;
+            inventoryCt = 0;
             GameHandler_PauseMenu.GameisPaused = false;
             SceneManager.LoadScene(lastLevelDied);
             // Reset all static variables here, for new games:
